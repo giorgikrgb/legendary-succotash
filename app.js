@@ -18,8 +18,8 @@ console.log(convertToGel(100)); // 300
 
 
 //დავალეება 3
-function getcountrycurency(country) 
-    if (country === 'USd') {
+function getcountrycurency(country) { 
+     if (country === 'USd') {
         return 'USA';
     }
     else if (country === 'euro') {
@@ -32,6 +32,8 @@ function getcountrycurency(country)
     else {
         return 'Unknown country';
     }           
+}
+      
 
 
 console.log(getcountrycurency('USA')); // USD
