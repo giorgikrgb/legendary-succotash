@@ -686,22 +686,22 @@ const data = {
 	errors: [],
 };
 
-function getcheapestproducts(products) {
-	let cheapestProduct = products[0];
+function getCheapestProduct(products) {
+	let cheapest = products[0];
 
 	for (let i = 1; i < products.length; i++) {
-		if (products[i].price < cheapestProduct.price) {
-			cheapestProduct = products[i];
+		if (products[i].price < cheapest.price) {
+			cheapest = products[i];
 		}
 	}
 
-	return cheapestProduct;
+	return cheapest;
 }
 
-console.log(getcheapestproducts(data.products));
+console.log(getCheapestProduct);	
 
 //დავალეება 7
-function findbyid(id,Array) {
+function findById(id, Array) {
 	return Array.find(item => item.id === id);
 }
-console.log(findbyid(8853, data.products)); // HP Notebook 15/BL1K4EA	
+console.log(findById(8853, data.products)); // HP Notebook 15/BL1K4EA	
