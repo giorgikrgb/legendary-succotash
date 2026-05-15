@@ -52,7 +52,9 @@ function getnumbersmorethan100(numbers) {
 console.log(getnumbersmorethan100([50, 150, 200, 75, 300])); // [150, 200, 300]
 
 //დავალეება 6
-console.log(data.js);
+import { data } from "./data.js";
+
+console.log(data.products);
 function getcheapestproducts(products) {
 	let cheapestProducts = [];
 	for (let i = 0; i < products.length; i++) {
