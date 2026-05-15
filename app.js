@@ -686,19 +686,19 @@ const data = {
 	errors: [],
 };
 
-
 function getcheapestproducts(products) {
-	let cheapestProducts = [];
-	for (let i = 0; i < products.length; i++) {
-		if (products[i].price <cheapestProducts.price || cheapestProducts.length === 0) {
-			cheapestProducts.push(products[i]);
-		}
-	}	
-	return cheapestProducts;
-}
-console.log 
-console.log(getcheapestproducts(products))
+	let cheapestProduct = products[0];
 
+	for (let i = 1; i < products.length; i++) {
+		if (products[i].price < cheapestProduct.price) {
+			cheapestProduct = products[i];
+		}
+	}
+
+	return cheapestProduct;
+}
+
+console.log(getcheapestproducts(data.products));
 
 //დავალეება 7
 function findbyid(id,Array) {
