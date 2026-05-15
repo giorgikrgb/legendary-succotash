@@ -58,7 +58,7 @@ console.log(data.products);
 function getcheapestproducts(products) {
 	let cheapestProducts = [];
 	for (let i = 0; i < products.length; i++) {
-		if (products[i].price < 100) {
+		if (products[i].price <cheapestProducts.price || cheapestProducts.length === 0) {
 			cheapestProducts.push(products[i]);
 		}
 	}	
