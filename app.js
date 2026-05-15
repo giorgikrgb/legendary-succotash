@@ -19,27 +19,23 @@ console.log(convertToGel(100)); // 300
 
 //დავალეება 3
 function getcountrycurency(country) { 
-     if (country === 'USd') {
-        return 'USA';
+     if (country === 'USA') {
+        return 'united states';
     }
-    else if (country === 'euro') {
+    else if (country === 'EUR') {
 
-        return 'EUR';
+        return 'europian union';
     }
     else if (country === 'GEL') {
         return 'Georgia';
     }
-    else {
-        return 'Unknown country';
-    }           
 }
       
 
 
-console.log(getcountrycurency('USA')); // USD
-console.log(getcountrycurency('EUR')); // EUR
-console.log(getcountrycurency('Georgia')); // GEL
-console.log(getcountrycurency('Japan')); // Unknown country
+console.log(getcountrycurency('USA')); // united states
+console.log(getcountrycurency('EUR')); // europian union
+console.log(getcountrycurency('GEL')); // Georgia
 
 //დავალეება 4
 function tolowercase(str) {
@@ -47,3 +43,24 @@ function tolowercase(str) {
 }
 console.log(tolowercase('my name is jane')); // my name is jane
 
+//დავალეება 5
+
+function getnumbersmorethan100(numbers) {
+    return numbers.filter(num => num > 100);
+
+}
+console.log(getnumbersmorethan100([50, 150, 200, 75, 300])); // [150, 200, 300]
+
+//დავალეება 6
+console.log(data.js);
+function getcheapestproducts(products) {
+	let cheapestProducts = [];
+	for (let i = 0; i < products.length; i++) {
+		if (products[i].price < 100) {
+			cheapestProducts.push(products[i]);
+		}
+	}	
+	return cheapestProducts;
+}
+console.log 
+console.log(getcheapestproducts(products))
