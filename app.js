@@ -687,19 +687,11 @@ const data = {
 };
 
 function getCheapestProduct(products) {
-	let cheapest = products[0];
-
-	for (let i = 1; i < products.length; i++) {
-		if (products[i].price < cheapest.price) {
-			cheapest = products[i];
-		}
-	}
-
-	return cheapest;
-}
-
-console.log(getCheapestProduct);	
-
+	return products.reduce((cheapest, product) => {	
+		return product.price < cheapest.price ? product : cheapest;
+	}, products[0]);
+}	
+console.log(getCheapestProduct(data.products)); // ASUS Vivobook 15/X1504VA-BQ008 Silver
 //დავალეება 7
 function findById(id, Array) {
 	return Array.find(item => item.id === id);
