@@ -698,3 +698,10 @@ function getcheapestproducts(products) {
 }
 console.log 
 console.log(getcheapestproducts(products))
+
+
+//დავალეება 7
+function findbyid(id,Array) {
+	return Array.find(item => item.id === id);
+}
+console.log(findbyid(8853, data.products)); // HP Notebook 15/BL1K4EA	
